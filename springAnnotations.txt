@@ -1,0 +1,53 @@
+1.@SpringBootApplication
+		@EnableAutoConfiguration + @ ComponentScan + @configuration
+
+2.@configuration -
+		This annotaion is used to mark a class as configuration class means that the class returns spring beans or java beans or we can say objects that are later 	
+		managed by spring container for injection etc.
+
+3.@Bean -
+		This annotation is used to mark a method that returns a spring bean or java bean means this annotation specify to create bean or object.
+
+4.@autowired -
+		This is used to inject a object into a reference.
+
+5.@component - 
+		This is used to annotated a class as component that is managed by spring container means spring container is responsible for the creating and managing  the object of that class.
+		
+		*- @Controller  -
+			           This is also a component of specific type which provides the functionality of controller class means these class maps the request to the particular handler method.
+		
+		*- @Service      -
+			           This is also a component of specific type which provides the functionality of service class means these classes have the bussiness logic.
+		
+		*- @Repository -
+			           This is also a component of specific type which provides the  functionality of dao classes means these class have the dao layer.
+
+6.@component scan -
+		 The @ComponentScan annotation is used with the @Configuration annotation to tell Spring the packages to scan for annotated components.
+
+7. @Qualifer  -
+		 This annotation is used to distinct between more than one (same type of beans) means if two student bean is managed by spring   container than which bean we have to use we can use throught thier id name using  @Qualifier annotation. 
+
+8.@Lazy	     - 
+		This annotation is used to stop creating a one object or bean when we have more than one(same type of beans) means it avoid the  creations of a bean which we don't want.
+
+9. @ResponseBody  - 
+		This annotation is used to return json format as body.
+
+10. @RequestBody - 
+		This annotation is used to deserialize the json into java object.Means the json we pass through the request body is converted into java object by 
+		@requestbody annotation.
+11. @RestController - 
+		Spring RestController annotation is a annotation that is itself annotated with @Controller and @ResponseBody.
+
+12. @PathVariable -
+		to get the uri variable from url we use the @PathVariable.
+13. @RequestParam -
+		this is used to get data which is coming in form.
+
+	Like:- <input type="text" name="userName"/>        to get userName we use this annotation like 
+					               @RequestParam(name = "userName") String userName
+
+
+
